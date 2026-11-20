@@ -1,0 +1,5 @@
+SELECT *
+
+FROM {{ ref('fct_orders') }}
+
+WHERE TOTAL_AMOUNT < 0

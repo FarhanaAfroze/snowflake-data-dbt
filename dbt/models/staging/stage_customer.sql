@@ -1,0 +1,9 @@
+SELECT
+    CUSTOMER_ID,
+    FIRST_NAME,
+    LAST_NAME,
+    EMAIL,
+    COUNTRY,
+    CREATED_AT
+
+FROM {{ source('raw', 'CUSTOMERS') }}

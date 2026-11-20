@@ -1,0 +1,12 @@
+SELECT
+
+    ORDER_ID,
+    CUSTOMER_ID,
+    PRODUCT_ID,
+
+    ORDER_DATE,
+    QUANTITY,
+
+    TOTAL_AMOUNT
+
+FROM SNOWFLAKE_DATA.DEV.stage_orders

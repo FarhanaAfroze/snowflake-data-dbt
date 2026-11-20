@@ -1,0 +1,50 @@
+version: 2
+
+models:
+
+  - name: stage_customer
+
+    columns:
+
+      - name: CUSTOMER_ID
+        data_tests:
+          - unique
+          - not_null
+
+      - name: EMAIL
+        data_tests:
+          - not_null
+
+  - name: stage_products
+
+    columns:
+
+      - name: PRODUCT_ID
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stage_orders
+
+    columns:
+
+      - name: ORDER_ID
+        data_tests:
+          - unique
+          - not_null
+
+      - name: CUSTOMER_ID
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stage_customer')
+                field: CUSTOMER_ID
+
+      - name: PRODUCT_ID
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stage_products')
+                field: PRODUCT_ID

@@ -1,0 +1,15 @@
+SELECT
+
+    CUSTOMER_ID,
+
+    FIRST_NAME,
+    LAST_NAME,
+
+    FIRST_NAME || ' ' || LAST_NAME AS FULL_NAME,
+
+    EMAIL,
+    COUNTRY,
+
+    CREATED_AT
+
+FROM SNOWFLAKE_DATA.DEV.stage_customer

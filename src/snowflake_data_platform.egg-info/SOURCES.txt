@@ -1,0 +1,13 @@
+pyproject.toml
+src/snowflake_data_platform.egg-info/PKG-INFO
+src/snowflake_data_platform.egg-info/SOURCES.txt
+src/snowflake_data_platform.egg-info/dependency_links.txt
+src/snowflake_data_platform.egg-info/requires.txt
+src/snowflake_data_platform.egg-info/top_level.txt
+src/synthetic_data/__init__.py
+src/synthetic_data/customers.py
+src/synthetic_data/generator.py
+src/synthetic_data/loader.py
+src/synthetic_data/loader_connection.py
+src/synthetic_data/orders.py
+src/synthetic_data/products.py
